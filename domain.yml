@@ -1,0 +1,55 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - thank
+  - ask_builder
+  - handleinsult
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Wassup!"
+  - text: "Hi from GPTS Bot."
+  - text: "Hola!"
+  - text: "Hey there! I'm the GPTS Bot."
+  - text: "Greeting"
+
+  utter_affirm:
+  - text: "Okay"
+  - text: "Yeah"
+  - text: "That's correct"
+
+  utter_thank:
+  - text: "Thank you!"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_handleinsult:
+  - text: "That's not very nice 😢"
+  - text: "That wasn't very nice. Perhaps try an anger management class?"
+  - text: "I'll pretend I didn't process that mean comment."
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Ciao!"
+  - text: "See you again!"
+
+  utter_ask_builder:
+  - text: "I am developed by the GPTS Team."
+  - text: "I am made by the GPS Team."
+  - text: "My creator is from the GPTS Team."
+  - text: "All credits to GPTS Team."
+  - text: "I was developed in-house KPMG Global Services."
+
+actions:
+  - utter_greet
+  - utter_happy
+  - utter_handleinsult
+  - utter_goodbye
+  - action_get_answer
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
